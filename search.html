@@ -11,9 +11,96 @@
     <form action="https://fom.in.ua/echo">
         <label for="car_body_type"> Тип кузова
             <select name="car_body_type" id="car_body_type">
-                <option value="sedan">sedan</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Minivan">Minivan</option>
+                <option value="SUV">SUV</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Cabriolet">Cabriolet</option>
+                <option value="Sport">Sport</option>
+                <option value="Pickup">Pickup</option>
+                <option value="4WD">4WD</option>
+                <option value="Mini Truck">Mini Truck</option>
+                <option value="Micro">Micro</option>
+                <option value="Van">Van</option>
+                <option value="Campervan">Campervan</option>
             </select>
         </label>
+        <br>
+        <label for="auto_brand">Марка машины
+            <input type="text" name="auto_brand" id="auto_brand" placeholder="Audi">
+        </label>
+        <br>
+        <label for="country">Страна ппоизводитель
+            <select name="country" id="country">
+                <option value="India">Индия</option>
+                <option value="Mexico">Мексика</option>
+                <option value="Spain">Испания</option>
+                <option value="Brazil">Бразилия</option>
+                <option value="Thailand">Таиланд</option>
+                <option value="Canada">Канада</option>
+                <option value="France">Франция</option>
+                <option value="Japan">Япония</option>
+                <option value="USA">США</option>
+                <option value="China">Китай</option>
+            </select>
+        </label>
+        <br>
+        <label for="Price_from">Цена от
+            <input type="number" name="Price_from" id="Price_from" value="100">
+        </label>
+        <label for="Price_to">до
+            <input type="number" name="Price_to" id="Price_to" value="1000000">
+        </label>
+        <br>
+        <label for="year_of_manufacture_from">Год выпуска от
+            <input type="number" name="year_of_manufacture_from" id="year_of_manufacture_from" value="1950">
+        </label>
+        <label for="year_of_manufacture_to">до
+            <input type="number" name="year_of_manufacture_to" id="year_of_manufacture_to" value="2023">
+        </label>
+        <br>
+        <label for="car_condition">Состояние машины
+            <select name="car_condition" id="car_condition" multiple>
+                <option value="used">Б/у</option>
+                <option value="new">Новая</option>
+                <option value="broken">Битая</option>
+                <option value="uncleared in customs">Нерастаможенная</option>
+                <option value="in_credit">В кредит</option>
+            </select>
+        </label>
+        <br>
+        <label for="fuel_type">Тип топлива
+            <select name="fuel_type" id="fuel_type">
+                <option value="electro">Электро</option>
+                <option value="petrol">Бензин</option>
+                <option value="diesel">Дизель</option>
+                <option value="on_gas">На газу</option>
+            </select>
+        </label>
+        <br>
+        <label for="gearbox_type">Тип коробки передач
+            <select name="gearbox_type" id="gearbox_type">
+                <option value="Manual_transmission">Механическая коробка передач</option>
+                <option value="Automatic_transmission">Автоматическая коробка передач</option>
+                <option value="Robotic_gearbox">Роботизированная коробка переключения передач</option>
+                <option value="Semi_automatic_transmission">Полуавтоматическая коробка передач</option>
+            </select>
+        </label>
+        <br>
+        <label for="color">Цвет машины
+            <input type="color" name="color" id="color">
+        </label>
+        <br>
+        <label for="comfort">Комфорт
+            <select name="comfort" id="comfort">
+                <option value="Luxury">Люкс</option>
+                <option value="Leather">Коханый салон</option>
+                <option value="Luke">Люк</option>
+                <option value="air-conditioner">Кондиционер</option>
+            </select>
+        </label>
+        <br>
+        <button type="submit">Искать</button>
     </form>
 </body>
 </html>
